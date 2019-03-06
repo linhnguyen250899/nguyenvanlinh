@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Windows 10 TIMT"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-06 04:22:51 PM"/>
+        <attribute name="created" value="V2luZG93cyAxMCBUSU1UO0RFU0tUT1AtS0JTTENRMTsyMDE5LTAzLTA2OzAzOjA4OjA1IFBNOzM1ODc="/>
+        <attribute name="edited" value="V2luZG93cyAxMCBUSU1UO0RFU0tUT1AtS0JTTENRMTsyMDE5LTAzLTA2OzA0OjIyOjUxIFBNOzQ7MzY5Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Real" array="False" size=""/>
+            <declare name="a" type="Real" array="False" size=""/>
+            <output expression="&quot;nh&#7853;p a&quot;" newline="True"/>
+            <input variable="a"/>
+            <declare name="b" type="Real" array="False" size=""/>
+            <output expression="&quot;nh&#7853;p b&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a!=0">
+                <then>
+                    <assign variable="x" expression="-b/a"/>
+                    <output expression="&quot;nghi&#7879;m ph&#432;&#417;ng tr&#236;nh l&#224; &quot;&amp;x" newline="True"/>
+                </then>
+                <else>
+                    <if expression="b=0">
+                        <then>
+                            <output expression="&quot;ph&#432;&#417;ng tr&#236;nh v&#244; s&#7889; nghi&#7879;m&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;ph&#432;&#417;ng tr&#236;nh v&#244; nghi&#7879;m&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

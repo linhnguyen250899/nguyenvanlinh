@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Windows 10 TIMT"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-06 04:22:05 PM"/>
+        <attribute name="created" value="V2luZG93cyAxMCBUSU1UO0RFU0tUT1AtS0JTTENRMTsyMDE5LTAzLTA2OzAzOjM1OjI2IFBNOzM1OTA="/>
+        <attribute name="edited" value="V2luZG93cyAxMCBUSU1UO0RFU0tUT1AtS0JTTENRMTsyMDE5LTAzLTA2OzAzOjM1OjMxIFBNOzE7V2luZG93cyAxMCBUSU1UO0RFU0tUT1AtS0JTTENRMTsyMDE5LTAzLTA2OzAzOjA4OjA1IFBNO2dp4bqjaSBwaMawxqFuZyB0csOsbmggYuG6rWMgbmjhuqV0LmZwcmc7MzQzNDM="/>
+        <attribute name="edited" value="V2luZG93cyAxMCBUSU1UO0RFU0tUT1AtS0JTTENRMTsyMDE5LTAzLTA2OzA0OjIyOjA1IFBNOzM7MzY5NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Real" array="False" size=""/>
+            <declare name="x1" type="Real" array="False" size=""/>
+            <declare name="x2" type="Real" array="False" size=""/>
+            <declare name="a" type="Real" array="False" size=""/>
+            <output expression="&quot;nh&#7853;p a&quot;" newline="True"/>
+            <input variable="a"/>
+            <declare name="b" type="Real" array="False" size=""/>
+            <output expression="&quot;nh&#7853;p b&quot;" newline="True"/>
+            <input variable="b"/>
+            <declare name="c" type="Real" array="False" size=""/>
+            <output expression="&quot;nh&#7853;p c&quot;" newline="True"/>
+            <input variable="c"/>
+            <if expression="a=0">
+                <then>
+                    <if expression="b!=0">
+                        <then>
+                            <if expression="c=0">
+                                <then>
+                                    <output expression="&quot;ph&#432;&#417;ng tr&#236;nh c&#243; v&#244; s&#7889; nghi&#7879;m&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;ph&#432;&#417;ng tr&#236;nh v&#244; nghi&#7879;m&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <assign variable="x" expression="-b/a"/>
+                            <output expression="&quot;nghi&#7879;m c&#7911;a ph&#432;&#417;ng tr&#236;nh l&#224; &quot;&amp;x" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <declare name="d" type="Real" array="False" size=""/>
+                    <assign variable="d" expression="b^2-4*a*c"/>
+                    <if expression="d&gt;=0">
+                        <then>
+                            <if expression="d==0">
+                                <then>
+                                    <assign variable="x" expression="-b/(2*a)"/>
+                                    <output expression="&quot;nghi&#7879;m c&#7911;a ph&#432;&#417;ng tr&#236;nh l&#224; &quot;&amp;x" newline="True"/>
+                                </then>
+                                <else>
+                                    <assign variable="x1" expression="(-b+sqrt(d))/(2*a)"/>
+                                    <assign variable="x2" expression="(-b-sqrt(d))/(2*a)"/>
+                                    <output expression="&quot;nghi&#7879;m c&#7911;a ph&#432;&#417;ng tr&#236;nh l&#224; &quot;&amp;x1" newline="True"/>
+                                    <output expression="&quot;nghi&#7879;m c&#7911;a ph&#432;&#417;ng tr&#236;nh l&#224; &quot;&amp;x2" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;ph&#432;&#417;ng tr&#236;nh v&#244; nghi&#7879;m&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
