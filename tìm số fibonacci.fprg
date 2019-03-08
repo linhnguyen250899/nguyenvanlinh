@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Linh Nguyen"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-08 09:15:37 PM"/>
+        <attribute name="created" value="TGluaCBOZ3V5ZW47REVTS1RPUC1ISUszRlVDOzIwMTktMDMtMDg7MDk6MDM6NDYgUE07MzQyMg=="/>
+        <attribute name="edited" value="TGluaCBOZ3V5ZW47REVTS1RPUC1ISUszRlVDOzIwMTktMDMtMDg7MDk6MTU6MzcgUE07MTszNTMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fib" type="Real" array="False" size=""/>
+            <declare name="n" type="Real" array="False" size=""/>
+            <output expression="&quot;nh&#7853;p s&#7889; n&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="fib" expression="(1/(sqrt(5))*(((1+sqrt(5))/2)^n-((1-sqrt(5))/2)^n))"/>
+            <output expression="&quot;k&#7871;t qu&#7843; l&#224;: &quot;&amp;fib" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
